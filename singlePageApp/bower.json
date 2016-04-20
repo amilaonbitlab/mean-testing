@@ -1,0 +1,26 @@
+{
+  "name": "angular-single-page-application",
+  "homepage": "https://github.com/amilaonbitlab/mean-testing",
+  "authors": [
+    "amilaonbit <amilaonbit@gmail.com>"
+  ],
+  "description": "This is for testing sigle page application",
+  "main": "'public/index.html'",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "satellizer": "^0.14.0"
+  }
+}

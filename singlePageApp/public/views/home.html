@@ -1,0 +1,31 @@
+<br>
+{{homeLine}}
+<hr>
+
+<button ng-click="changeLocation()">Change Location</button>
+
+<hr> 
+{{brands}}
+
+<div ng-repeat="brand in brands">
+	{{brand}}
+</div>
+<hr>
+
+Customer Result {{customer}}
+<hr>
+
+<select  ng-model="model.addressChoice" ng-options="(a.addressLine1+ ', '+ a.addressLine2+ ', '+ a.addressLine3+ ', '+ a.addressLine4) for a in addresses">
+            <option value="" disabled>{{addresses.length}} Address's Found</option>
+    </select>
+<hr>
+<customer-directive></customer-directive>
+
+<hr>
+Which of the following is a valid AngularJS expression?
+<br>
+01 : {{ 2 + 2 }} <br>
+02 :  { 2 + 2 } <br>
+03 : (( 2 + 2 )) <br>
+04 :  { (2 + 2) } <br>
+

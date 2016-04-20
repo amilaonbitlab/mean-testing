@@ -1,0 +1,48 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Start Single Page App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.js"></script>
+    <script src="libs/satellizer/satellizer.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/app.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/controllers/appController.js"></script>
+    <script src="js/controllers/homeController.js"></script>
+    <script src="js/controllers/testController.js"></script>
+   
+    
+</head>
+<body ng-app="sampleApp" ng-controller="appController">
+<div class="container">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">{{home}}</a>
+        </div>
+
+        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
+        <ul class="nav navbar-nav">
+            <li><a href="/test">Test Page</a></li>
+        </ul>
+    </nav>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>
